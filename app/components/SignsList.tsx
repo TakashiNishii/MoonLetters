@@ -8,7 +8,7 @@ import SignBaseInfo from "./SignBaseInfo";
 
 const SignsList = () => {
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 my-10 animate-fade">
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 my-3 animate-fade">
       {Signs.map((sign, index) => (
         <Link
           key={`${sign}-${index}`}

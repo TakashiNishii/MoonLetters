@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import Footer from "./components/Footer";
 
 const outfit = Outfit({ subsets: ["latin"], weight: "300" });
 
@@ -16,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${outfit.className}  bg-primary`}>{children}</body>
+      <body className={`${outfit.className} min-h-dvh bg-primary`}>
+        {children} <Footer />
+      </body>
     </html>
   );
 }

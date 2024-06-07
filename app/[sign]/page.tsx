@@ -14,7 +14,7 @@ interface HoroscopePageProps {
 const HoroscopePage = async ({ params: { sign } }: HoroscopePageProps) => {
   const horoscopeData = await getDataHoroscope(sign);
   return (
-    <div className="flex min-h-screen flex-col items-center p-6 md:p-24">
+    <main className="flex flex-col min-h-[calc(100dvh-25px)] items-center p-6 md:p-24">
       <Header />
       <Horoscope signSelected={sign} horoscopeData={horoscopeData} />
       <Link
@@ -24,7 +24,7 @@ const HoroscopePage = async ({ params: { sign } }: HoroscopePageProps) => {
         <ArrowLeftCircleIcon className="w-10 h-10 cursor-pointer" />
         Go back
       </Link>
-    </div>
+    </main>
   );
 };
 
