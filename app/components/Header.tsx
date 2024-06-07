@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <h1 className="text-lg md:text-4xl font-extrabold text-neutral text-center">
+    <h1 className="text-lg hover:cursor-pointer md:text-4xl font-extrabold text-neutral text-center">
       <span
         className="animate-pulse
           duration-3000
