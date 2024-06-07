@@ -7,12 +7,6 @@ const outfit = Outfit({ subsets: ["latin"], weight: "300" });
 export const metadata: Metadata = {
   title: "🔮 MoonLetters",
   description: "Get your daily horoscope",
-  icons: [
-    {
-      rel: "icon",
-      href: "/favicon.ico",
-    },
-  ],
 };
 
 export default function RootLayout({
