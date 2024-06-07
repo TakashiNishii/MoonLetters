@@ -1,5 +1,7 @@
 "use client";
+import { ChevronRightIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 const Signs = [
   {
@@ -54,14 +56,15 @@ const Signs = [
 
 const SignsList = () => {
   return (
-    <div className="grid grid-cols-4 gap-4 my-10 animate-fade">
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 my-10 animate-fade">
       {Signs.map((sign, index) => (
-        <div
+        <Link
           key={`${sign}-${index}`}
-          className="p-4 border rounded-lg text-center  group hover:border-neutral hover:link transition-colors duration-300 ease-in-out"
+          href={`/${sign.name}`.toLowerCase()}
+          className="flex flex-row lg:flex-col items-center justify-center gap-2 p-2 lg:p-4 border rounded-lg text-center  group hover:border-neutral hover:link transition-colors duration-300 ease-in-out"
         >
           <div className="avatar">
-            <div className="w-24 rounded-full bg-base-100 group-hover:bg-neutral transition-colors duration-300 ease-in-out">
+            <div className="w-12 md:w-24 rounded-full bg-base-100 group-hover:bg-neutral transition-colors duration-300 ease-in-out">
               <Image
                 width={90}
                 height={90}
@@ -70,9 +73,16 @@ const SignsList = () => {
               />
             </div>
           </div>
-          <h2 className="text-2xl font-bold text-neutral">{sign.name}</h2>
-          <p className="text-lg text-neutral">{sign.dates}</p>
-        </div>
+          <div className="flex-1 min-w-[135px]">
+            <h2 className="text-sm md:text-2xl font-bold text-neutral">
+              {sign.name}
+            </h2>
+            <p className="text-xs md:text-lg text-neutral">{sign.dates}</p>
+          </div>
+          <div className="lg:hidden">
+            <ChevronRightIcon className="w-5 h-5 text-neutral" />
+          </div>
+        </Link>
       ))}
     </div>
   );
