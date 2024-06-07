@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.outfit-thin {
+  font-family: "Outfit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.outfit-light {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.outfit-regular {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.outfit-bold {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.outfit-black {
+  font-family: "Outfit", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.outfit-thin-italic {
+  font-family: "Outfit", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.outfit-light-italic {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.outfit-regular-italic {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.outfit-bold-italic {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.outfit-black-italic {
+  font-family: "Outfit", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+html{
+  font-family: 'Outfit';
+}
+
+.btn {
+  text-transform: none;
+}
