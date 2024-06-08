@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       animation: {
         fade: "fadeIn 1s linear",
+        leftToRightFade: "leftToRightFade 1s linear",
       },
       keyframes: {
         fadeIn: {
@@ -20,6 +21,20 @@ const config: Config = {
           "100%": {
             opacity: "1",
             transform: "translateY(0)",
+          },
+        },
+        leftToRightFade: {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(-2rem)",
+          },
+          "50%": {
+            opacity: "0.5",
+            transform: "translateX(1rem)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)",
           },
         },
       },

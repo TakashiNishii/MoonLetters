@@ -19,7 +19,7 @@ const HoroscopePage = async ({ params: { sign } }: HoroscopePageProps) => {
       <Horoscope signSelected={sign} horoscopeData={horoscopeData} />
       <Link
         href="/"
-        className="font-extrabold md:text-3xl text-neutral flex items-center gap-2"
+        className="font-extrabold md:text-3xl text-neutral flex items-center gap-2  "
       >
         <ArrowLeftCircleIcon className="w-10 h-10 cursor-pointer" />
         Go back

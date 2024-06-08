@@ -17,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${outfit.className} min-h-dvh bg-primary`}>
+      <body
+        className={`${outfit.className} min-h-dvh bg-gradient-to-br from-primary from-70%  to-secondary`}
+      >
         {children} <Footer />
       </body>
     </html>
